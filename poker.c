@@ -200,10 +200,10 @@ int main(int argc,char *argv[])
             }
         }
     }
-    printf("%10d || total combinations\n",count);
+    printf("%10d | grade * | %15s | ratio %.8lf\n", count,"TOTAL",(double)(count/count));
     for(int i = 0; i < 9; i++)
     {
-        printf("%10d || grade %i || %15s || ratio %.8lf\n", res[i], i,g_gradeName[i],(double)res[i]/(double)count);
+        printf("%10d | grade %i | %15s | ratio %.8lf\n", res[i], i,g_gradeName[i],(double)res[i]/(double)count);
     }
     return 0;
 }
